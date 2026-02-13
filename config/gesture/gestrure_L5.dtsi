@@ -2,6 +2,7 @@
     gesture_L5: gesture_L5 {
         compatible = "zmk,input-processor-mouse-gesture";
         #input-processor-cells = <0>;
+        layer = <5>;   // ← このレイヤーのときだけ有効
 
         movement-threshold = <4>;   // 敏感に
         idle-timeout-ms = <80>;
