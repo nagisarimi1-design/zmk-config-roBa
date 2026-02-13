@@ -1,5 +1,5 @@
 #include "roBa.dtsi"
-#include "config/gesture/gesture_L5.dtsi"
+#include "gesture/gesture_L5.dtsi"
 #include <input/processors.dtsi>
 
 &default_transform {
