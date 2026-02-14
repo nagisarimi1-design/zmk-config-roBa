@@ -16,32 +16,6 @@
             ;
 };
 
-&zip_mouse_gesture {
-    stroke-size = <300>; // Optional (default: 200)
-    enable-eager-mode; // Optional, but recommended
-
-history_back {
-    pattern = <GESTURE_RIGHT>;
-    bindings = <&kp LALT LEFT>;
-};
-
-history_forward {
-    pattern = <GESTURE_LEFT>;
-    bindings = <&kp LALT RIGHT>;
-};
-
-close_tab {
-    pattern = <GESTURE_DOWN GESTURE_RIGHT>;
-    bindings = <&kp LCTRL W>;
-};
-
-new_tab {
-    pattern = <GESTURE_DOWN GESTURE_LEFT>;
-    bindings = <&kp LCTRL T>;
-};
-
-};
-
 / {
     trackball_listener {
         status = "okay";
@@ -49,7 +23,6 @@ new_tab {
         device = <&trackball>;
         input-processors = <
             &zip_temp_layer 8 10000
-            &zip_mouse_gesture
         >;
     }; 
 };
