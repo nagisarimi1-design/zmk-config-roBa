@@ -8,11 +8,12 @@
                 idle-timeout-ms = <120>;
                 gesture-cooldown-ms = <150>;
         
-                bindings = <
-                    &kp LGUI KC_UP               // 上: 最大化
-                    &kp LGUI KC_DOWN             // 下: 最小化
-                    &kp LALT KC_TAB              // 右: 次のウィンドウ
-                    &kp LALT LSHIFT KC_TAB       // 左: 前のウィンドウ
-                >;
+bindings = <
+    &kp LG(UP)        // 上: 最大化
+    &kp LG(DOWN)      // 下: 最小化
+    &kp LA(TAB)       // 右: 次のウィンドウ
+    &kp LS(LA(TAB))   // 左: 前のウィンドウ
+>;
+
         };
 };
