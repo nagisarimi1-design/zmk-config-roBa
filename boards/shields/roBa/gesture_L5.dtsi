@@ -9,10 +9,12 @@
                 gesture-cooldown-ms = <150>;
         
 bindings = <
-    &kp LG(UP)        // 上: 最大化
-    &kp LG(DOWN)      // 下: 最小化
-    &kp LA(TAB)       // 右: 次のウィンドウ
-    &kp LS(LA(TAB))   // 左: 前のウィンドウ
+                &mouse_gesture // Activates mouse gesture while it is pressed
+                &mouse_gesture_on // Activates mouse gesture on each press
+                &mouse_gesture_off // Deactivates mouse gesture on each press
+                &mouse_gesture_toggle // Toggle mouse gesture on/off on each press
+                &mouse_gesture_kp 0 A // Activates mouse gesture while held, and triggers &kp A on tap
+                &mouse_gesture_mkp 0 RCLK // Activates mouse gesture while held, and triggers right click on tap
 >;
 
         };
