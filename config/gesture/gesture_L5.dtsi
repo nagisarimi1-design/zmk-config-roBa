@@ -1,5 +1,4 @@
-/ {
-    gesture_window: gesture_window {
+gesture_window: gesture_window {
         compatible = "zmk,input-processor-mouse-gesture";
         #input-processor-cells = <0>;
 
@@ -14,5 +13,4 @@
             &kp LA(TAB)             // 右: 次のウィンドウ
             &kp LA(LS(TAB))         // 左: 前のウィンドウ
         >;
-    };
 };
