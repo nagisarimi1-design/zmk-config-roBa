@@ -1,6 +1,5 @@
 #include "roBa.dtsi"
 #include <input/processors.dtsi>
-#include <mouse-gesture.dtsi>
 
 &default_transform {
     col-offset = <6>;
