@@ -62,10 +62,10 @@
     };
 };
 
-//&zip_temp_layer {
-    //excluded-positions = <
-        //18 // J
-        //19 // K
-        //20 // l
-    //>;
-//};
+&zip_temp_layer {
+    excluded-positions = <
+        18 // J
+        19 // K
+        20 // l
+    >;
+};
