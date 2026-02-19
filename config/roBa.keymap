@@ -60,7 +60,7 @@
             key-positions = <18 19 20>;
         };
 
-        tab {
+        esc {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
         };
